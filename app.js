@@ -77,59 +77,22 @@ function updateProgress() {
   setTimeout(() => { bar.style.width = pct + '%'; }, 400);
 }
 
-function handleDownload() {
-  const btn = document.getElementById('mainDownloadBtn');
-  const status = document.getElementById('downloadProgress');
-  const text = document.getElementById('progressText');
-
-  btn.disabled = true;
-  btn.style.opacity = '0.6';
-  status.style.display = 'flex';
-
-  const steps = ['Scanning file...', 'Verifying signature...', 'Preparing package...', 'Starting download!'];
-  let i = 0;
-
-  const timer = setInterval(() => {
-    text.textContent = steps[i];
-    i++;
-    if (i >= steps.length) {
-      clearInterval(timer);
-      setTimeout(() => {
-        triggerDownload();
-        finishDownload();
-      }, 600);
-    }
-  }, 700);
-}
-
-function triggerDownload() {
-  const a = document.createElement('a');
-  a.href = '#'; // In a real app, this would be CONFIG.apkFile
-  a.download = CONFIG.apkFile;
-  document.body.appendChild(a);
-  a.click();
-  document.body.removeChild(a);
-}
-
-function finishDownload() {
-  const btn = document.getElementById('mainDownloadBtn');
-  const status = document.getElementById('downloadProgress');
-  
-  btn.disabled = false;
-  btn.style.opacity = '1';
-  status.style.display = 'none';
-
+function handleInstantDownload() {
+  // 1. Increment download count
   downloadCount++;
   localStorage.setItem(CONFIG.storageKey, downloadCount);
   renderUI();
+
+  // 2. Show toast
   showToast();
 }
 
 function showToast() {
   const toast = document.getElementById('toast');
   toast.classList.add('show');
-  setTimeout(() => toast.classList.remove('show'), 4000);
+  setTimeout(() => toast.classList.remove('show'), 3000);
 }
+
 
 function initTabs() {
   const tabs = document.querySelectorAll('.tab-btn');
