@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A1101 Store — Dora</title>
+  <meta name="description" content="Download the Dora app from the official A1101 store. Meet Your Smart Task Manager." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <div class="brand">
+        <div class="brand-logo">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFD200" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+        </div>
+        <span class="brand-name">A1101 Store</span>
+      </div>
+      <div class="nav-links">
+        <a href="#features">Products</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <div class="hero-badge">A1101 — Official Release</div>
+        <h1>Meet <span class="accent">Dora</span><br/>Your Smart<br/>Task Manager</h1>
+        <p class="hero-sub">Organize tasks, track streaks, and stay productive—all in one beautifully designed app. Completely free, no sign-up required, direct download.</p>
+        <div class="hero-btns">
+          <a href="#download" class="btn-dl">Download Free APK</a>
+        </div>
+      </div>
+        <div class="hero-visual">
+         <div class="dual-phone-container">
+            <div class="phone-left">
+              <div class="streak-badge">🔥 7-Day Streak</div>
+              <img src="app-mockup.png" alt="Dora Tasks" />
+            </div>
+            <div class="phone-right">
+              <div class="growth-badge">+12% Growth</div>
+              <img src="trends-mockup.png" alt="Dora Trends" />
+            </div>
+            <div class="task-toast">✅ Task Completed!</div>
+         </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ========== FEATURES grid ========== -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-header">
+        <h2>Everything you need to <span class="accent">stay on track</span></h2>
+        <p>Built for speedy productivity and total habit tracking.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feat-icon">⚡</div>
+          <h4>Streak Tracking</h4>
+          <p>Build consistent habits. Dora counts everyday streaks to keep your motivation alive with a stunning streak counter.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feat-icon">📅</div>
+          <h4>Smart Calendar</h4>
+          <p>Dora integrates the full month-to-view calendar, so you can see every day and check tasks instantly.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feat-icon">📊</div>
+          <h4>Trends & Analytics</h4>
+          <p>Track your weekly productivity with category-based charts and productivity score markers.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feat-icon">📥</div>
+          <h4>Task Collections</h4>
+          <p>Organize tasks into Work, Personal, or Custom collections—your way, your your productivity.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PREVIEW ========== -->
+  <section class="section" style="background:#F9FAFB;">
+    <div class="container">
+      <div class="section-header">
+        <h2>See Dora in <span class="accent">action</span></h2>
+        <p>Clean, minimal, and beautiful—just how your productivity should feel.</p>
+      </div>
+      <div class="preview-tabs">
+        <button class="tab-btn active" data-tab="dashboard">Dashboard</button>
+        <button class="tab-btn" data-tab="trends">Trends</button>
+        <button class="tab-btn" data-tab="calendar">Calendar</button>
+        <button class="tab-btn" data-tab="collections">Collections</button>
+      </div>
+      <div class="preview-content" id="previewContainer">
+        <div class="preview-img-box">
+          <img src="app-mockup.png" alt="Dashboard View" id="previewImg" />
+        </div>
+        <div class="preview-text">
+          <h3 style="font-size:2rem; font-weight:900; margin-bottom:20px;" id="previewTitle">Dashboard Overview</h3>
+          <p style="color:var(--text-muted); font-size:1.1rem; line-height:1.6;" id="previewDesc">A modern dashboard specifically for high-achievers. Quick task entry, streak counters, and a sleek inbox focus. No clutter, just everything you need to stay on top of your game.</p>
+          <ul class="preview-list" id="previewList">
+            <li style="display:flex; gap:10px;"><span style="color:var(--primary);">✓</span> Daily streak tracker</li>
+            <li style="display:flex; gap:10px;"><span style="color:var(--primary);">✓</span> Integrated Task Library</li>
+            <li style="display:flex; gap:10px;"><span style="color:var(--primary);">✓</span> "Next Up" task queue</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== DOWNLOAD SECTION ========== -->
+  <section class="section" id="download">
+    <div class="container">
+      <div class="dl-card">
+        <div class="dl-app-meta">
+          <img src="app-icon.png" alt="Dora App" />
+          <h2>Dora</h2>
+          <p style="color:var(--text-muted); font-weight:600;">by A1101 Store</p>
+          <div class="stars">★★★★★ <span style="color:var(--text-muted); font-size:0.9rem;">4.9</span></div>
+          <div style="display:flex; gap:12px; margin-top:20px;">
+            <span style="background:var(--bg-gray); padding:4px 12px; border-radius:50px; font-size:0.8rem; font-weight:700;">Task Manager</span>
+            <span style="background:var(--bg-gray); padding:4px 12px; border-radius:50px; font-size:0.8rem; font-weight:700;">Free</span>
+            <span style="background:var(--bg-gray); padding:4px 12px; border-radius:50px; font-size:0.8rem; font-weight:700;">Android APK</span>
+          </div>
+          <div class="dl-btn-box">
+             <button class="btn-mega" id="mainDownloadBtn" onclick="handleDownload()">Download Dora APK</button>
+             <p style="text-align:center; font-size:0.8rem; color:var(--text-muted); margin-top:10px; font-weight:600;">Free v1.0.1 Stable Release for Android 8.0+</p>
+          </div>
+        </div>
+
+        <div class="dl-steps">
+          <h4>How to install</h4>
+          <div class="step">
+            <div class="step-n">1</div>
+            <div class="step-t">Tap <strong>Download Dora APK</strong> and wait for the file to finish.</div>
+          </div>
+          <div class="step">
+            <div class="step-n">2</div>
+            <div class="step-t">Go to <strong>Settings -> Security</strong> and enable <strong>Install unknown apps</strong>.</div>
+          </div>
+          <div class="step">
+            <div class="step-n">3</div>
+            <div class="step-t">Open the downloaded <strong>Dora.apk</strong> file and tap <strong>Install</strong>.</div>
+          </div>
+          <div class="step">
+            <div class="step-n">4</div>
+            <div class="step-t">Launch Dora and start organizing your life! 🚀</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <div class="container">
+      <p style="font-weight:800; font-size:1.2rem; margin-bottom:10px;"><span class="brand-name" style="color:var(--primary);">A1101 Store</span></p>
+      <p style="font-size:0.8rem; opacity:0.6;">© 2026 Dora App. All Rights Reserved. · Professional Release</p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" style="position:fixed; bottom:40px; left:50%; transform:translateX(-50%); background:#000; color:#fff; padding:16px 32px; border-radius:50px; font-weight:700; opacity:0; pointer-events:none; transition:0.3s; z-index:1000;">Download started! check your browser.</div>
+
+  <script src="app.js"></script>
+</body>
+</html>
