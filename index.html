@@ -35,7 +35,7 @@
         <h1>Meet <span class="accent">Dora</span><br/>Your Smart<br/>Task Manager</h1>
         <p class="hero-sub">Organize tasks, track streaks, and stay productive—all in one beautifully designed app. Completely free, no sign-up required, direct download.</p>
         <div class="hero-btns">
-          <a href="#download" class="btn-dl">Download Free APK</a>
+          <a href="Dora.apk" download="Dora.apk" class="btn-dl" id="heroDownloadLink" onclick="handleInstantDownload()">Download Free APK</a>
         </div>
       </div>
         <div class="hero-visual">
@@ -133,11 +133,12 @@
             <span style="background:var(--bg-gray); padding:4px 12px; border-radius:50px; font-size:0.8rem; font-weight:700;">Android APK</span>
           </div>
           <div class="dl-btn-box">
-             <button class="btn-mega" id="mainDownloadBtn" onclick="handleDownload()">Download Dora APK</button>
+             <a href="Dora.apk" download="Dora.apk" class="btn-mega" id="mainDownloadBtn" onclick="handleInstantDownload()">Download Dora APK</a>
              <p style="text-align:center; font-size:0.8rem; color:var(--text-muted); margin-top:10px; font-weight:600;">Free v1.0.1 Stable Release for Android 8.0+</p>
           </div>
         </div>
 
+        <div class="dl-status" id="downloadProgress" style="display:none; visibility:hidden;"></div>
         <div class="dl-steps">
           <h4>How to install</h4>
           <div class="step">
